@@ -64,7 +64,7 @@ func parseSize(size string) (int, error) {
 func rotate(name string, size, count int) error {
 	fi, err := os.Stat(name)
 	if err != nil {
-		return err
+		return nil
 	}
 
 	if fi.Size() < int64(size) {
