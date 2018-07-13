@@ -3,8 +3,8 @@
 all: logrot
 
 logrot: bin/logrot
-bin/logrot: bin src logrot.go cmd/Main.go
-	GOPATH=${PWD} go build -o $@ cmd/Main.go
+bin/logrot: bin src logrot.go cmd/main.go
+	GOPATH=${PWD} go build -o $@ cmd/main.go
 
 
 bin:
